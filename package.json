@@ -9,8 +9,8 @@
     "type-check": "tsc",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test": "jest",
-    "coverage": "rm -rf coverage && npm run test --coverage --watchAll=false",
+    "test": "jest --coverage=false",
+    "coverage": "rm -rf coverage && jest --coverage=true --watchAll=false",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx --quiet",
     "lint-fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "prettier-fix": "prettier --write ."

@@ -9,7 +9,7 @@ export default {
   },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   testPathIgnorePatterns: ['/node_modules/'],
-  collectCoverage: false,
+  collectCoverage: true,
   collectCoverageFrom: ['src/**/!(*.stories).{ts,tsx}'],
   modulePaths: ['<rootDir>/src/'],
 };
