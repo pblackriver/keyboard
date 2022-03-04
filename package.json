@@ -1,5 +1,5 @@
 {
-  "name": "vitejs-boilerplate",
+  "name": "keyboard",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -37,7 +37,6 @@
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "@typescript-eslint/parser": "^5.12.1",
     "@vitejs/plugin-react": "^1.0.7",
-    "@vitejs/plugin-react-refresh": "^1.3.6",
     "autoprefixer": "^10.4.2",
     "babel-loader": "^8.2.3",
     "eslint": "^8.9.0",
