@@ -10,6 +10,11 @@ module.exports = {
       boxShadow: {
         keyUp: '6px 6px 12px #1C1E1F, -6px -6px 12px #242629',
         keyDown: 'inset 6px 6px 12px #1C1E1F, inset -6px -6px 12px #242629',
+        enterLeftKeyUp: '6px 6px 12px #1C1E1F, -6px -6px 12px #242629',
+        enterRightKeyUp: '6px 6px 12px #1c1e1f, 6px -6px 12px #242629',
+
+        enterLeftKeyDown: 'inset 6px 6px 12px #1c1e1f',
+        enterRightKeyDown: 'inset 1px 6px 12px #1c1e1f, inset -6px -6px 12px #242629',
       },
       width: {
         keyboard: '70.75rem',
