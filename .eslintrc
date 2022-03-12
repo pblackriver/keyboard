@@ -25,7 +25,7 @@
       "arrowFunctions": true
     }
   },
-  "plugins": ["react", "@typescript-eslint", "prettier", "spellcheck", "simple-import-sort", "jsx-a11y"],
+  "plugins": ["react", "@typescript-eslint", "prettier", "spellcheck", "jsx-a11y"],
   "settings": {
     "react": {
       "version": "detect" // Tells eslint-plugin-react to automatically detect the version of React to use
