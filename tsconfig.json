@@ -5,7 +5,7 @@
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
     "baseUrl": "src",
-    "skipLibCheck": false,
+    "skipLibCheck": true,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "strict": true,
@@ -18,8 +18,8 @@
     "jsx": "react-jsx",
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "types": ["vite-plugin-svgr/client","jest", "@testing-library/jest-dom"],
+    "types": ["vite-plugin-svgr/client", "jest", "@testing-library/jest-dom"]
   },
-  "include": ["src","vite.config.ts"],
-  "exclude": ["node_modules"],
+  "include": ["src", "vite.config.ts"],
+  "exclude": ["node_modules"]
 }
