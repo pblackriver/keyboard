@@ -1,6 +1,7 @@
 import ScreenSizeWarning from 'components/ScreenSizeWarning/ScreenSizeWarning';
-import useWindowSize from 'hooks/useWindowSize';
-import React, { lazy } from 'react';
+import useWindowSize from 'hooks/useWindowSize/useWindowSize';
+import * as React from 'react';
+import { lazy } from 'react';
 import { fifthRowKeys, firstRowKeys, fourthRowKeys, secondRowKeys, thirdRowKeys } from 'utils';
 const EnterKey = lazy(() => import('components/EnterKey/EnterKey'));
 const Keyboard = lazy(() => import('components/Keyboard/Keyboard'));
@@ -9,10 +10,11 @@ const Row = lazy(() => import('containers/Row/Row'));
 
 const App = () => {
   const { width } = useWindowSize();
+
   return (
     <React.Suspense fallback={'loading'}>
-      {/* keyboard width */}
       <div className='flex flex-col items-center justify-center h-full bg-beje'>
+        {/* keyboard width */}
         {width < 1132 ? (
           <ScreenSizeWarning />
         ) : (
