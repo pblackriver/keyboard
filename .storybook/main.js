@@ -1,4 +1,4 @@
-const svgrPlugin = require('vite-plugin-svgr');
+const svgrPlugin = require('@svgr/rollup');
 
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
@@ -27,11 +27,7 @@ module.exports = {
     return {
       ...config,
       plugins: [
-        svgrPlugin({
-          svgrOptions: {
-            icon: true,
-          },
-        }),
+        svgrPlugin({ icon: true }),
         ...config.plugins,
       ],
     };
